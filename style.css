@@ -1,0 +1,208 @@
+:root {
+    --primary: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#modal_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.6);
+
+    z-index: 1;
+}
+
+#signup-form-modal {
+}
+
+#sidebar {
+    background: red;
+    width: 300px;
+}
+
+#container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    height: 45px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+#information {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-size: 2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 600px;
+}
+
+#screen {
+    position: relative;
+    background: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F10%2F21%2Fcat-meowing-at-night-FINAL.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 10px 0;
+    height: 600px;
+    overflow: scroll;
+}
+
+#user_type_status {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: fit-content;
+    padding: 4px;
+    border: 1px solid lightgray;
+    border-radius: 0 5px 0 0;
+
+    background-color: white;
+    color: gray;
+
+    font-size: 1.2rem;
+}
+
+.opponent_message_container {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.me_message_container {
+    display: flex;
+    justify-content: right;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.opponent_message_text {
+    padding: 10px;
+    margin: 4px 0;
+    background: lightblue;
+    max-width: 250px;
+
+    border: 1px solid lightblue;
+    border-radius: 10px;
+
+    font-size: 1.6rem;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.me_message_text {
+    padding: 10px;
+    margin: 4px 0;
+    background: white;
+    max-width: 250px;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    font-size: 1.6rem;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.avatar {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#chat_form {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    border-top: 1px solid black;
+    background: green;
+}
+
+#chat_input {
+    flex: 1;
+    padding: 0 10px;
+    font-size: 1.6rem;
+    margin-right: 5px;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn {
+    border: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+#send_message_btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 680px) {
+    #sidebar {
+        display: none;
+    }
+
+    #screen {
+        height: 700px;
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 1024px) {
+    #sidebar {
+        width: 100px;
+    }
+
+    #screen {
+        height: 1050px;
+    }
+}

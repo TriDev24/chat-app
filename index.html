@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./style.css" rel="stylesheet" />
+        <title>Chat App</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script src="http://localhost:3000/socket.io/socket.io.js "></script>
+    </head>
+    <body>
+        <!-- <div id="modal_container">
+            <div id="overlay"></div>
+            <form id="signup-form-modal">
+                <label for="username">Please type your name</label>
+                <input type="text" />
+                <button type="submit" class="btn">Continue</button>
+            </form>
+        </div> -->
+        <div id="sidebar"></div>
+        <div id="container">
+            <div id="header">
+                <div id="information">
+                    <img
+                        class="avatar"
+                        src="https://ui-avatars.com/api/?background=random&name=Tri_Trong&bold=true"
+                        alt="avatar"
+                    />
+                    <h3 class="username">Nguyễn Minh Trọng Trí</h3>
+                </div>
+                <div id="feature"></div>
+            </div>
+            <div id="screen">
+                <div id="user_typing_status"></div>
+            </div>
+            <form id="chat_form">
+                <input
+                    id="chat_input"
+                    placeholder="Please type something"
+                    type="text"
+                />
+                <button class="btn" id="send_message_btn">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+
+        <script type="module" src="main.js" />
+    </body>
+</html>
